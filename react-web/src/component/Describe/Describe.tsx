@@ -70,7 +70,7 @@ function getDetail(unshow: any, path: any, setDetail: any, detail: any, photo: a
     g.then((res: any) => { setDetail(res); return; })
     return (
       <Card id="0" css={unshow} sx={{width:'55vw', height: '81vh', display: 'flex', flexDirection: 'column', justifyContent: 'top', alignItems: 'flex-start',overflow:"auto",overflowX:'hidden' }}>
-        <img onClick={() => { changeImg(path, setPhoto) }} style={{ objectFit: "contain"}} height="40%" width="100%" alt="" src={("file://" + path + "/.config/image.png")}></img>
+        <img onClick={() => { changeImg(path, setPhoto) }} style={{ objectFit: "cover"}} height="40%" width="100%" alt="" src={("file://" + path + "/.config/image.png")}></img>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">{detail.title}</Typography>
           <Divider style={{ marginTop: '2%', marginBottom: "2%" }} variant="middle"></Divider>
